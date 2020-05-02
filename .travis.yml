@@ -8,13 +8,6 @@ matrix:
     dist: trusty
     compiler: gcc
     env: PACKAGES_INSTALL="libusb-1.0-0-dev libncurses5-dev gcc-multilib"
-  - os: osx
-    compiler: clang
-    env: PACKAGES_INSTALL="libusb"
-  - os: linux
-    dist: trusty
-    compiler: gcc
-    env: OSTYPE=msys PACKAGES_INSTALL="libudev-dev gcc-mingw-w64-i686 libncurses5-dev"
 deploy:
   provider: releases
   skip_cleanup: true
