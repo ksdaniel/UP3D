@@ -11,8 +11,8 @@ matrix:
 deploy:
   provider: releases
   skip_cleanup: true
-  api_key
-    secure: b0a1cd06e47c981e898fd27824c2b24915f7f148
+  api_key:
+    secure: TIlfTaDQXImB4rObaYeBnEm08AEcASbhPkNe6HVNdxwfytPd3vyJ29d8roXE0DoRNQUqycMzYOD9OA/Ce3xzdTI2Ss4QEwDSIAYd93tze63Dcz/I80tEI3gkS9JXQKDSt/Tqz2MvARKwH2dDlsjRHSyDPfVtkk2GcHzgMfERtCLY4CNLqvJiojm6WcPIX6aJcQLRbNiBI5xzMgO03MNA964PhisrGFqUb6cZC1fBwu+6oWVXOuVSbaa1dQOTCzb350jv1rfwhN8O8HjEVVAK9xqEpL/sU8zG8+qHbd69rX6vn7ePUoStrHiccq4m/CSVz39UEDS5fQiF/2Hc68kC82/QDkNNwrRXvb+cRUSenlMdHvHSe0x03DlJOtrWWMWuf1CY8lP4UgJ7FK8Tk+//vzUVrvuI+ONmUP4FtQjjF+TaXqi9/iST/YomibbuOqmDnSAA1Q0VS5Eu99C5HcacakbnnC4M4Qh2oMtKTxjQd+Yc8BvBsEyoe4mm+Z/pu9VXrAYyasFhQ26/A4MAAZpFcMymbgs5f+Y3P0khanzTu2ScHuKmSBYXpa81wHhmvDhV1CpIZW9mLXkvhaeYWCdunEVOTv4oNMR7mwd4JtDCI3pxqdPk8THsjEGAQufiizXbiXBhRiTmR79tWRQVXBevTTHAhY25DrTKBIF4sWBE44I=
   file_glob: true
   file: $(pwd)/build/*.zip
   on:
