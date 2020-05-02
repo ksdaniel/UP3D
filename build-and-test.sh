@@ -77,5 +77,6 @@ fi
 cd build
 zip -r -9 "package.zip" "UP3DTOOLS"
 
-curl -X PUT -T ./package.zip -H "x-ms-date: $(date -u)" -H "x-ms-blob-type: BlockBlob" "https://electiondatastaging.blob.core.windows.net/travis/package.zip?5AFfseaDGFfJsrQLpiYH5LzADEkJNC2TAGOOuPRwoCh92i37sfMnWRLYZMM/diMpHx84Owm0NSKhlLJDcjcAoA=="
+curl -X PUT -T ./package.zip -H "x-ms-date: $(date -u)" -H "x-ms-blob-type: BlockBlob" "https://electiondatastaging.blob.core.windows.net/travis/package.zip?sv=2019-10-10&ss=bfqt&srt=sco&sp=rwdlacup&se=2020-05-02T23:53:45Z&st=2020-05-02T15:53:45Z&spr=https&sig=NfYmxiYd%2B6CjQEB7lRmHFhMy%2ByYte8Uj8qb6lSKd%2FnQ%3D"
+
 cd ..
